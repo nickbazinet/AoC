@@ -1,7 +1,9 @@
 package main
 
-import "strconv"
-import "log"
+import (
+	"strconv"
+	"log"
+)
 
 // Return the calibration value from a single line. 
 // Will return -1 with an error if something goes wrong
@@ -28,3 +30,4 @@ func CalculateCalibrationValue(line string) (int, error) {
 	}
 	return value, nil
 }
+

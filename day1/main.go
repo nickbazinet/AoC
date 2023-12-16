@@ -19,7 +19,7 @@ func main()  {
 	var sum int 
 	for scanner.Scan() {
 		line := scanner.Text()
-		value, err := CalculateCalibrationValue(line)
+		value, err := CalculateCalibrationValueV2(line)
 		if err != nil {
 			log.Fatalf("Error while reading the single line: %s. Error: %+v", line, err)
 		} else {
